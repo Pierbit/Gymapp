@@ -12,6 +12,12 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
+        android:id="@+id/navigation_allenamenti"
+        android:name="com.example.gymapp2.ui.allenamenti.AllenamentiFragment"
+        android:label="@string/title_allenamenti"
+        tools:layout="@layout/fragment_allenamenti" />
+
+    <fragment
         android:id="@+id/navigation_dashboard"
         android:name="com.example.gymapp2.ui.dashboard.DashboardFragment"
         android:label="@string/title_dashboard"
@@ -22,4 +28,5 @@
         android:name="com.example.gymapp2.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+
 </navigation>

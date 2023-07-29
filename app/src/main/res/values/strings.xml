@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Gymapp2</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_dashboard">Orari</string>
+    <string name="title_notifications">Profilo</string>
+    <string name="title_allenamenti">Allenamenti</string>
+    <string name="title1_home">Visualizza fasce orarie</string>
+    <string name="title2_home">Genera scheda automaticamente</string>
 </resources>

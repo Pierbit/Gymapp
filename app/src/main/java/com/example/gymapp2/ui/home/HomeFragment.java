@@ -4,6 +4,9 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.CalendarView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -28,13 +31,22 @@ public class HomeFragment extends Fragment {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textHome;
+        ScrollView scroll = binding.ScrollView01;
+        scroll.setBackgroundColor(getResources().getColor(R.color.grey));
+
+        Button button = binding.button;
+        button.setBackgroundColor(getResources().getColor(R.color.grey));
+
+        CalendarView calendar = binding.calendarView;
+        calendar.setBackgroundColor(getResources().getColor(R.color.grey));
+
+        /*final TextView textView = binding.textHome;
         homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
             }
-        });
+        });*/
         return root;
     }
 

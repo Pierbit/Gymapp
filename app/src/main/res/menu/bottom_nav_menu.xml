@@ -7,13 +7,18 @@
         android:title="@string/title_home" />
 
     <item
+        android:id="@+id/navigation_allenamenti"
+        android:icon="@drawable/allenamentis_foreground"
+        android:title="@string/title_allenamenti" />
+
+    <item
         android:id="@+id/navigation_dashboard"
-        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:icon="@drawable/orari_foreground"
         android:title="@string/title_dashboard" />
 
     <item
         android:id="@+id/navigation_notifications"
-        android:icon="@drawable/ic_notifications_black_24dp"
+        android:icon="@drawable/user_foreground"
         android:title="@string/title_notifications" />
 
 </menu>
