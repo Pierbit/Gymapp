@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
@@ -39,6 +40,9 @@ public class HomeFragment extends Fragment {
 
         CalendarView calendar = binding.calendarView;
         calendar.setBackgroundColor(getResources().getColor(R.color.grey));
+
+        Toolbar bar = binding.toolbar2;
+        bar.setBackgroundColor(getResources().getColor(R.color.grey));
 
         /*final TextView textView = binding.textHome;
         homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
