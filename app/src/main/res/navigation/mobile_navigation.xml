@@ -15,7 +15,11 @@
         android:id="@+id/navigation_allenamenti"
         android:name="com.example.gymapp2.ui.allenamenti.AllenamentiFragment"
         android:label="@string/title_allenamenti"
-        tools:layout="@layout/fragment_allenamenti" />
+        tools:layout="@layout/fragment_allenamenti" >
+        <action
+            android:id="@+id/action_navigation_allenamenti_to_navigation_esercizi1"
+            app:destination="@id/navigation_esercizi1" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_dashboard"
@@ -28,5 +32,15 @@
         android:name="com.example.gymapp2.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_esercizi1"
+        android:name="com.example.gymapp2.ui.esercizi1.Esercizi1Fragment"
+        android:label="@string/title_esercizi1"
+        tools:layout="@layout/fragment_esercizi1">
+        <action
+            android:id="@+id/action_navigation_esercizi1_to_navigation_allenamenti"
+            app:destination="@id/navigation_allenamenti" />
+    </fragment>
 
 </navigation>

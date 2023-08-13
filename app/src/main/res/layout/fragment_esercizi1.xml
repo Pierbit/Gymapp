@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titolo_esercizi1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="Creazione scheda: selezione esercizi"
+        android:textColor="@color/black"
+        android:textSize="25dip"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/scroll_esercizi1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scroll_esercizi1"
+        android:layout_width="match_parent"
+        android:layout_height="425dip"
+        android:layout_marginBottom="140dip"
+        android:background="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/esercizi1_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_vertical"
+            android:layout_marginVertical="10dip"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:gravity="center"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nome_scheda_layout"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="55dp"
+        android:theme="@style/Theme.AppCompat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_conferma"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nome_scheda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"
+            android:imeOptions="actionNone"
+            android:inputType="text|textCapSentences|textNoSuggestions"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button_conferma"
+        android:layout_width="143dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#00FF00"
+        android:text="Conferma creazione"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/nome_scheda_layout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="55dp"
+        android:text="Nome scheda:"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/nome_scheda_layout"
+        app:layout_constraintEnd_toStartOf="@+id/button_conferma"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

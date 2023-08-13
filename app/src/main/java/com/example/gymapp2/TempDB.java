@@ -60,6 +60,10 @@ public class TempDB {
         return this.esercizios;
     }
 
+    public void addScheda(Scheda scheda){
+        this.schede.add(scheda);
+    }
+
     private ArrayList<Scheda> schede;
     private ArrayList<Esercizio> esercizios;
 }
