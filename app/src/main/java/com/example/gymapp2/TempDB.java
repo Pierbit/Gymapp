@@ -64,6 +64,15 @@ public class TempDB {
         this.schede.add(scheda);
     }
 
+    public String getScheda_selezionata(){
+        return this.scheda_selezionata;
+    }
+
+    public void setScheda_selezionata(String string){
+        this.scheda_selezionata = string;
+    }
+
     private ArrayList<Scheda> schede;
     private ArrayList<Esercizio> esercizios;
+    private String scheda_selezionata;
 }

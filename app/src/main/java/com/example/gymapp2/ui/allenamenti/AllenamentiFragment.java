@@ -66,6 +66,19 @@ public class AllenamentiFragment extends Fragment {
             ImageView image = v.findViewById(R.id.imageView);
             image.setImageResource(R.drawable.allenamenti_foreground);
 
+            String temp_nome = schede.get(i).getNome();
+            Button button_card_1 = v.findViewById(R.id.button_card_1);
+            button_card_1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    db.setScheda_selezionata(temp_nome);
+                    Navigation.findNavController(v).navigate(R.id.navigation_esercizi2);
+                    return;
+
+                }
+            });
+
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(1000,300);
             params.setMargins(0,8,0,8);
 

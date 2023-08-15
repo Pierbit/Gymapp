@@ -6,6 +6,7 @@
         <entry key="..\:/Users/ppcam/AndroidStudioProjects/Gymapp2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1125" />
         <entry key="..\:/Users/ppcam/AndroidStudioProjects/Gymapp2/app/src/main/res/drawable/allenamenti_foreground.xml" value="0.10989583333333333" />
         <entry key="..\:/Users/ppcam/AndroidStudioProjects/Gymapp2/app/src/main/res/drawable/allenamentis_foreground.xml" value="0.2203125" />
+        <entry key="..\:/Users/ppcam/AndroidStudioProjects/Gymapp2/app/src/main/res/drawable/gym_1_foreground.xml" value="0.18125" />
         <entry key="..\:/Users/ppcam/AndroidStudioProjects/Gymapp2/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1125" />
         <entry key="..\:/Users/ppcam/AndroidStudioProjects/Gymapp2/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.1125" />
         <entry key="..\:/Users/ppcam/AndroidStudioProjects/Gymapp2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1125" />
@@ -14,12 +15,16 @@
         <entry key="..\:/Users/ppcam/AndroidStudioProjects/Gymapp2/app/src/main/res/layout/activity_main.xml" value="0.16" />
         <entry key="..\:/Users/ppcam/AndroidStudioProjects/Gymapp2/app/src/main/res/layout/allenamenti_card.xml" value="0.12454710144927536" />
         <entry key="..\:/Users/ppcam/AndroidStudioProjects/Gymapp2/app/src/main/res/layout/esercizi1_card.xml" value="0.33" />
+        <entry key="..\:/Users/ppcam/AndroidStudioProjects/Gymapp2/app/src/main/res/layout/esercizi2_card.xml" value="0.25" />
         <entry key="..\:/Users/ppcam/AndroidStudioProjects/Gymapp2/app/src/main/res/layout/fragment_allenamenti.xml" value="0.25" />
         <entry key="..\:/Users/ppcam/AndroidStudioProjects/Gymapp2/app/src/main/res/layout/fragment_dashboard.xml" value="0.1" />
         <entry key="..\:/Users/ppcam/AndroidStudioProjects/Gymapp2/app/src/main/res/layout/fragment_esercizi1.xml" value="0.12454710144927536" />
+        <entry key="..\:/Users/ppcam/AndroidStudioProjects/Gymapp2/app/src/main/res/layout/fragment_esercizi2.xml" value="0.12364130434782608" />
         <entry key="..\:/Users/ppcam/AndroidStudioProjects/Gymapp2/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/Users/ppcam/AndroidStudioProjects/Gymapp2/app/src/main/res/layout/fragment_notifications.xml" value="0.1" />
+        <entry key="..\:/Users/ppcam/AndroidStudioProjects/Gymapp2/app/src/main/res/layout/fragment_tutorial.xml" value="0.13269927536231885" />
         <entry key="..\:/Users/ppcam/AndroidStudioProjects/Gymapp2/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
+        <entry key="..\:/Users/ppcam/AndroidStudioProjects/Gymapp2/app/src/main/res/mipmap-anydpi-v26/hourglass1.xml" value="0.2203125" />
       </map>
     </option>
   </component>

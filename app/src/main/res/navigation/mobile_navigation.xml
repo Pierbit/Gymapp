@@ -19,6 +19,9 @@
         <action
             android:id="@+id/action_navigation_allenamenti_to_navigation_esercizi1"
             app:destination="@id/navigation_esercizi1" />
+        <action
+            android:id="@+id/action_navigation_allenamenti_to_navigation_esercizi2"
+            app:destination="@id/navigation_esercizi2" />
     </fragment>
 
     <fragment
@@ -41,6 +44,29 @@
         <action
             android:id="@+id/action_navigation_esercizi1_to_navigation_allenamenti"
             app:destination="@id/navigation_allenamenti" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_esercizi2"
+        android:name="com.example.gymapp2.ui.esercizi2.Esercizi2Fragment"
+        android:label="@string/title_esercizi2"
+        tools:layout="@layout/fragment_esercizi2">
+        <action
+            android:id="@+id/action_navigation_esercizi2_to_navigation_allenamenti"
+            app:destination="@id/navigation_allenamenti" />
+        <action
+            android:id="@+id/action_navigation_esercizi2_to_navigation_tutorial"
+            app:destination="@id/navigation_tutorial" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_tutorial"
+        android:name="com.example.gymapp2.ui.tutorial.TutorialFragment"
+        android:label="@string/title_tutorial"
+        tools:layout="@layout/fragment_tutorial">
+        <action
+            android:id="@+id/action_navigation_tutorial_to_navigation_esercizi2"
+            app:destination="@id/navigation_esercizi2" />
     </fragment>
 
 </navigation>

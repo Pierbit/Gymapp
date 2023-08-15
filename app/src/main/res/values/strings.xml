@@ -7,4 +7,6 @@
     <string name="title1_home">Visualizza fasce orarie</string>
     <string name="title2_home">Genera scheda automaticamente</string>
     <string name="title_esercizi1">Esercizi</string>
+    <string name="title_esercizi2">ListaEsercizi</string>
+    <string name="title_tutorial">VideoTutorial</string>
 </resources>
