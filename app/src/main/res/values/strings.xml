@@ -9,4 +9,6 @@
     <string name="title_esercizi1">Esercizi</string>
     <string name="title_esercizi2">ListaEsercizi</string>
     <string name="title_tutorial">VideoTutorial</string>
+    <string name="title_orari">PrenotaOrari</string>
+    <string name="title_utente">AreaUtente</string>
 </resources>

@@ -6,31 +6,32 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/titolo_dashboard"
+        android:id="@+id/titolo_orari"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="25dp"
         android:gravity="center"
         android:text="Prenota il tuo orario in palestra"
         android:textColor="@color/black"
         android:textSize="25dip"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/scroll_dashboard"
+        app:layout_constraintBottom_toTopOf="@id/scroll_orari"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
-        android:id="@+id/scroll_dashboard"
+        android:id="@+id/scroll_orari"
         android:layout_width="match_parent"
-        android:layout_height="500dip"
-        android:layout_marginBottom="100dp"
+        android:layout_height="425dip"
+        android:layout_marginBottom="140dip"
         android:background="@color/grey"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
-            android:id="@+id/orari_dashboard"
+            android:id="@+id/orari_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="fill_vertical"

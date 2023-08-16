@@ -7,12 +7,14 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 
 import com.example.gymapp2.R;
@@ -79,6 +81,17 @@ public class Esercizi2Fragment extends Fragment {
                     rest.setText(temp1);
                     ImageView image2 = v.findViewById(R.id.imageRest);
                     image2.setImageResource(R.drawable.hourglass_foreground);
+
+                    Button buttonTutorial = v.findViewById(R.id.button_tutorial);
+
+                    buttonTutorial.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+
+                            db.setEsercizio_selezionato(e);
+                            Navigation.findNavController(v).navigate(R.id.navigation_tutorial);
+                        }
+                    });
 
                     LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(1000,500);
                     params.setMargins(0,8,0,8);

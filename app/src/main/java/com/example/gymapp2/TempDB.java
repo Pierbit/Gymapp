@@ -1,6 +1,7 @@
 package com.example.gymapp2;
 
 import com.example.gymapp2.esercizio.Esercizio;
+import com.example.gymapp2.fasciaoraria.FasciaOraria;
 import com.example.gymapp2.scheda.Scheda;
 
 import java.lang.reflect.Array;
@@ -50,6 +51,28 @@ public class TempDB {
             this.schede.add(scheda);
         }
 
+
+        FasciaOraria fascia1 = new FasciaOraria(1, "8:30-9:30",30);
+        this.fasceorarie.add(fascia1);
+        FasciaOraria fascia2 = new FasciaOraria(2, "9:30-10:30",30);
+        this.fasceorarie.add(fascia2);
+        FasciaOraria fascia3 = new FasciaOraria(3, "10:30-11:30",30);
+        this.fasceorarie.add(fascia3);
+        FasciaOraria fascia4 = new FasciaOraria(4, "11:30-12:30",10);
+        this.fasceorarie.add(fascia4);
+        FasciaOraria fascia5 = new FasciaOraria(5, "14:30-15:30",30);
+        this.fasceorarie.add(fascia5);
+        FasciaOraria fascia6 = new FasciaOraria(6, "15:30-16:30",30);
+        this.fasceorarie.add(fascia6);
+        FasciaOraria fascia7 = new FasciaOraria(7, "16:30-17:30",15);
+        this.fasceorarie.add(fascia7);
+        FasciaOraria fascia8 = new FasciaOraria(8, "17:30-18:30",5);
+        this.fasceorarie.add(fascia8);
+        FasciaOraria fascia9 = new FasciaOraria(9,"18:30-19:30",2);
+        this.fasceorarie.add(fascia9);
+        FasciaOraria fascia10 = new FasciaOraria(10,"19:30-20:30",0);
+        this.fasceorarie.add(fascia10);
+
     }
 
     public ArrayList<Scheda> getSchede(){
@@ -72,7 +95,21 @@ public class TempDB {
         this.scheda_selezionata = string;
     }
 
+    public Esercizio getEsercizio_selezionato(){
+        return this.esercizio_selezionato;
+    }
+
+    public void setEsercizio_selezionato(Esercizio esercizio_selezionato) {
+        this.esercizio_selezionato = esercizio_selezionato;
+    }
+
+    public ArrayList<FasciaOraria> getFasceorarie() {
+        return this.fasceorarie;
+    }
+
     private ArrayList<Scheda> schede;
     private ArrayList<Esercizio> esercizios;
     private String scheda_selezionata;
+    private Esercizio esercizio_selezionato;
+    private ArrayList<FasciaOraria> fasceorarie = new ArrayList<>();
 }

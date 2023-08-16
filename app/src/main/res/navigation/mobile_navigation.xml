@@ -69,4 +69,14 @@
             app:destination="@id/navigation_esercizi2" />
     </fragment>
 
+    <fragment
+        android:id="@+id/navigation_orari"
+        android:name="com.example.gymapp2.ui.orari.OrariFragment"
+        android:label="@string/title_orari"
+        tools:layout="@layout/fragment_orari">
+        <action
+            android:id="@+id/action_navigation_orari_to_navigation_home"
+            app:destination="@id/navigation_home"/>
+    </fragment>
+
 </navigation>
