@@ -9,13 +9,12 @@
         android:id="@+id/titolo_esercizi1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="60dp"
         android:gravity="center"
         android:text="Creazione scheda: selezione esercizi"
         android:textColor="@color/black"
-        android:textSize="25dip"
+        android:textSize="22dip"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/scroll_esercizi1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -35,9 +34,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="fill_vertical"
-            android:layout_marginVertical="10dip"
-            android:layout_marginTop="10dip"
-            android:layout_marginBottom="10dip"
             android:gravity="center"
             android:orientation="vertical" />
     </ScrollView>

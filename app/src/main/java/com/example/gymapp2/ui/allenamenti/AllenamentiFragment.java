@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.Toolbar;
 
 import androidx.annotation.NonNull;
@@ -113,7 +114,8 @@ public class AllenamentiFragment extends Fragment {
                 for(int j = 0; j < x; j++){
                     esercizi_temp.add(db.getEsercizi().get(j));
                 }
-                Scheda scheda = new Scheda("Scheda generata", esercizi_temp);
+                String generated_name = "Scheda generata " + db.getGeneratedCounter().toString();
+                Scheda scheda = new Scheda(generated_name, esercizi_temp);
                 db.addScheda(scheda);
 
                 TextView text = v1.findViewById(R.id.textView5);
@@ -126,10 +128,21 @@ public class AllenamentiFragment extends Fragment {
                 ImageView image = v1.findViewById(R.id.imageView);
                 image.setImageResource(R.drawable.allenamenti_foreground);
 
+                Button button3 = v1.findViewById(R.id.button_card_1);
+                button3.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        db.setScheda_selezionata(scheda.getNome());
+                        Navigation.findNavController(v).navigate(R.id.navigation_esercizi2);
+                    }
+                });
+
                 LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(1000,300);
                 params.setMargins(0,8,0,8);
 
                 layout.addView(v1,params);
+
+                Toast.makeText(getActivity().getApplicationContext(),"Scheda generata correttamente",Toast.LENGTH_SHORT).show();
             }
         });
 

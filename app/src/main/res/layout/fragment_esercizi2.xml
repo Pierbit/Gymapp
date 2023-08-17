@@ -34,9 +34,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="fill_vertical"
-            android:layout_marginVertical="10dip"
-            android:layout_marginTop="10dip"
-            android:layout_marginBottom="10dip"
             android:gravity="center"
             android:orientation="vertical" />
     </ScrollView>

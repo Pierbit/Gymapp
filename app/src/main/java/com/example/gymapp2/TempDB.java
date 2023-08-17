@@ -107,9 +107,15 @@ public class TempDB {
         return this.fasceorarie;
     }
 
+    public Integer getGeneratedCounter(){
+        this.generatedCounter = this.generatedCounter + 1;
+        return this.generatedCounter;
+    }
+
     private ArrayList<Scheda> schede;
     private ArrayList<Esercizio> esercizios;
     private String scheda_selezionata;
     private Esercizio esercizio_selezionato;
     private ArrayList<FasciaOraria> fasceorarie = new ArrayList<>();
+    private Integer generatedCounter = 0;
 }

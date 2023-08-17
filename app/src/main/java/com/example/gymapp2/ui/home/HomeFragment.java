@@ -15,6 +15,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.Navigation;
 
 import com.example.gymapp2.R;
 import com.example.gymapp2.databinding.FragmentHomeBinding;
@@ -35,7 +36,7 @@ public class HomeFragment extends Fragment {
         ScrollView scroll = binding.ScrollView01;
         scroll.setBackgroundColor(getResources().getColor(R.color.grey));
 
-        Button button = binding.button;
+        Button button = binding.buttonFasce;
         button.setBackgroundColor(getResources().getColor(R.color.grey));
 
         CalendarView calendar = binding.calendarView;
@@ -44,13 +45,13 @@ public class HomeFragment extends Fragment {
         Toolbar bar = binding.toolbar2;
         bar.setBackgroundColor(getResources().getColor(R.color.grey));
 
-        /*final TextView textView = binding.textHome;
-        homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        Button btn = root.findViewById(R.id.button_fasce);
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
+            public void onClick(View v) {
+                Navigation.findNavController(v).navigate(R.id.navigation_orari);
             }
-        });*/
+        });
         return root;
     }
 
