@@ -1,7 +1,9 @@
 package com.example.gymapp2;
 
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
+import android.widget.ImageView;
 import android.widget.Toolbar;
 
 import com.example.gymapp2.scheda.Scheda;
@@ -32,6 +34,15 @@ public class MainActivity extends AppCompatActivity {
         androidx.appcompat.widget.Toolbar toolbar = (androidx.appcompat.widget.Toolbar) findViewById(R.id.toolbar1);
         setSupportActionBar(toolbar);
 
+        ImageView image = findViewById(R.id.imageViewUserPropic);
+        image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NavController navController = Navigation.findNavController(MainActivity.this, R.id.nav_host_fragment_activity_main);
+                navController.navigate(R.id.navigation_notifications);
+            }
+        });
+
         BottomNavigationView navView = findViewById(R.id.nav_view);
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.navigation_home, R.id.navigation_allenamenti, R.id.navigation_dashboard, R.id.navigation_notifications)
@@ -39,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
         //NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
+
 
         db = new TempDB();
     }

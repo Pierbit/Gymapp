@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_navigation_home_to_navigation_orari"
             app:destination="@id/navigation_orari"/>
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_notifications"
+            app:destination="@id/navigation_notifications"/>
     </fragment>
 
     <fragment

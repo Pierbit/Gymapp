@@ -88,7 +88,7 @@ public class DashboardFragment extends Fragment {
                     }
 
                     btn.setTextAppearance(R.style.italicText);
-                    btn.setTextSize(TypedValue.COMPLEX_UNIT_SP,8);
+                    btn.setTextSize(TypedValue.COMPLEX_UNIT_SP,10);
                     btn.setText("Prenotazione effettuata");
                     btn.setTextColor(getResources().getColor(R.color.darkgrey));
                     v.setEnabled(false);

@@ -79,7 +79,7 @@ public class OrariFragment extends Fragment {
             }
 
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(400,300);
-            params.setMargins(135,16,16,16);
+            params.setMargins(85,20,16,20);
 
             layout.addView(v, params);
 
